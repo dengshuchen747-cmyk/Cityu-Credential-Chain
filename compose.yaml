@@ -1,0 +1,22 @@
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: cityu-credential-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: unicredential
+      MYSQL_USER: unicredential
+      MYSQL_PASSWORD: change-me
+      MYSQL_ROOT_PASSWORD: change-root-me
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+volumes:
+  mysql_data:

@@ -1,0 +1,10 @@
+{
+  "chainId": 11155111,
+  "network": "sepolia",
+  "solidity": "0.8.24",
+  "optimizerRuns": 200,
+  "uniCredentialSBT": "",
+  "disclosureRegistry": "",
+  "deployer": "",
+  "deployedAt": ""
+}

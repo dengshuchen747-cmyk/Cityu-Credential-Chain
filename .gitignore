@@ -1,0 +1,66 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+!backend/.env.example
+!frontend/.env.local.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+backend/uploads/
+*.db
+*.sqlite
+*.sqlite3
+
+# Next.js / Node.js
+node_modules/
+.next/
+out/
+coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Solidity compiler output and downloaded dependencies
+artifacts/
+.deps/
+remix/artifacts/
+remix/.deps/
+
+# Local tooling and editor state
+.agents/
+.codex/
+.playwright-cli/
+.states/
+.vscode/
+.idea/
+AGENTS.md
+.DS_Store
+Thumbs.db
+*.log
+
+# Private course material, evidence, drafts, and legacy prototypes
+/IS3101 Group Project Description 2025-26B (2).pdf
+/IS3101_TEAM 4_ProjectProposal.pdf
+/test cases/
+/test cases.zip
+/README.docx
+/readme
+/remix/README.md
+/部署指南.md
+/学校发活动.html
+/学生注册.html
+/EduChain_Merged (person1 &2).sol
+~$*.docx
+
+# Keep demo screenshots; they are used by the public README.
+!docs/images/
+!docs/images/**
